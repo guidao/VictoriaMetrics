@@ -151,8 +151,8 @@ github.com/googleapis/gax-go/v2/internal
 # github.com/googleapis/go-type-adapters v1.0.0
 ## explicit; go 1.11
 github.com/googleapis/go-type-adapters/adapters
-# github.com/influxdata/influxdb v1.9.8
-## explicit; go 1.17
+# github.com/influxdata/influxdb v1.10.0
+## explicit; go 1.18
 github.com/influxdata/influxdb/client/v2
 github.com/influxdata/influxdb/models
 github.com/influxdata/influxdb/pkg/escape
