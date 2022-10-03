@@ -90,7 +90,7 @@ func (f *TimestampFlag) GetCategory() string {
 // GetValue returns the flags value as string representation and an empty
 // string if the flag takes no value at all.
 func (f *TimestampFlag) GetValue() string {
-	if f.Value != nil {
+	if f.Value != nil && f.Value.timestamp != nil {
 		return f.Value.timestamp.String()
 	}
 	return ""
@@ -146,6 +146,15 @@ func (f *TimestampFlag) Apply(set *flag.FlagSet) error {
 // Get returns the flag’s value in the given Context.
 func (f *TimestampFlag) Get(ctx *Context) *time.Time {
 	return ctx.Timestamp(f.Name)
+}
+
+// RunAction executes flag action if set
+func (f *TimestampFlag) RunAction(c *Context) error {
+	if f.Action != nil {
+		return f.Action(c, c.Timestamp(f.Name))
+	}
+
+	return nil
 }
 
 // Timestamp gets the timestamp from a flag name
