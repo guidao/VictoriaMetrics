@@ -19,7 +19,7 @@ require (
 	// See https://github.com/cheggaaa/pb/pull/192#issuecomment-1121285954 for details.
 	github.com/dmitryk-dk/pb/v3 v3.0.9
 	github.com/golang/snappy v0.0.4
-	github.com/influxdata/influxdb v1.9.8
+	github.com/influxdata/influxdb v1.11.0
 	github.com/klauspost/compress v1.15.7
 	github.com/prometheus/prometheus v1.8.2-0.20201119142752-3ad25a6dc3d9
 	github.com/urfave/cli/v2 v2.11.0
@@ -78,5 +78,5 @@ require (
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20220711132622-b6f31b0ceb50 // indirect
 	google.golang.org/grpc v1.47.0 // indirect
-	google.golang.org/protobuf v1.28.0 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
 )
